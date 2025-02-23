@@ -1,7 +1,10 @@
 <!-- https://giscus.app/ -->
 <script>
   (function () {
-    const themeMapper = Theme.getThemeMapper('light', 'dark_dimmed');
+    {% comment %} 기존 코드 const themeMapper = Theme.getThemeMapper('light', 'dark_dimmed');
+     'dark_dimmed'는 다크모드일 때 댓글창 색깔임.
+    {% endcomment %}
+    const themeMapper = Theme.getThemeMapper('light', 'light');
     const initTheme = themeMapper[Theme.visualState];
 
     let lang = '{{ site.comments.giscus.lang | default: lang }}';
