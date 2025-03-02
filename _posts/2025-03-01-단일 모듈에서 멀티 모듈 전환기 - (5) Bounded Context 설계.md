@@ -120,7 +120,7 @@ pin: false
 #### QnA BC 설계 시 고려했던 점
 
 다음 ERD은 이전에 보았던 <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란#프로젝트-이해를-위한-erd'>프로젝트 ERD</a>입니다.
-<img src="https://raw.githubusercontent.com/donghyun0304/ImageRepo/master/uPic/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202025-02-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.15.05.png" width="100%" height="100%">
+![erd](https://raw.githubusercontent.com/donghyun0304/ImageRepo/master/uPic/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202025-02-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.15.05.png)
 
 `Study` 엔티티는 `Comment` 엔티티와 일대다 관계이다.
 - 하나의 스터디는 여러개의 댓글을 가질 수 있다.
