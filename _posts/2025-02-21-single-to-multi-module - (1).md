@@ -97,7 +97,7 @@ ___
 ___
 ## **단일 모듈에서 멀티 모듈 전환기 목차**
 
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란?'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</span></a>
+- <a target='_blank' href='/posts/single-to-multi-module-(1)'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</span></a>
 - <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(2)-구현-계층'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
 - <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(3)-도메인-모델'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</a>
 - <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(4)-JPA-엔티티-격리-및-DB-추상화'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
