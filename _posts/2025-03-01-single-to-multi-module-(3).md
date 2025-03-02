@@ -18,7 +18,7 @@ pin: false
 >**피드백은 언제나 환영합니다.** 글의 내용에 대한 의견이나 질문이 있으시면 댓글로 남겨주세요.
 {: .prompt-tip }
 
-<a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(2)-구현-계층'>'단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층'</a>에서 이어집니다.
+<a target='_blank' href='/posts/single-to-multi-module-(2)'>'단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층'</a>에서 이어집니다.
 
 
 ---
@@ -70,7 +70,7 @@ public void edit(EditCommentRequest request, Comment comment) {
 }
 ```
 
-댓글 수정에 필요한 요청 DTO를 매개변수로 받았습니다. 많은 매개변수를 하나의 DTO로 묶어서 해결했습니다. 코드가 깔끔해졌습니다. 하지만 이 코드에는 어떤 문제가 있을까요? 컨트롤러에서 넘어오는 **API 스펙**이 그대로 구현 계층인 **협력 도구 클래스**로 넘어오고 있습니다. <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(2)-구현-계층#구현-계층의-장단점'>멀티 모듈 시리즈 - (2) 구현(Implementation) 계층</a>에서 다음과 같이 언급했습니다.
+댓글 수정에 필요한 요청 DTO를 매개변수로 받았습니다. 많은 매개변수를 하나의 DTO로 묶어서 해결했습니다. 코드가 깔끔해졌습니다. 하지만 이 코드에는 어떤 문제가 있을까요? 컨트롤러에서 넘어오는 **API 스펙**이 그대로 구현 계층인 **협력 도구 클래스**로 넘어오고 있습니다. <a target='_blank' href='/posts/single-to-multi-module-(2)#구현-계층의-장단점'>멀티 모듈 시리즈 - (2) 구현(Implementation) 계층</a>에서 다음과 같이 언급했습니다.
 
 > 협력 도구 클래스를 통해 비즈니스 로직을 구현하고 **재사용성**을 높인다.
 
@@ -218,7 +218,7 @@ public class StudyEntity {
 
 ### 도메인 모델
 
-위에서 정의한 [도메인 모델](#도메인-모델-정의)의 의미를 포함하면서 '<a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란?#용어-정의'>멀티 모듈 시리즈 - (1) 멀티 모듈이란?</a>'에서 다음과 같이 정의했습니다. 
+위에서 정의한 [도메인 모델](#도메인-모델-정의)의 의미를 포함하면서 '<a target='_blank' href='/posts/single-to-multi-module-(1)#용어-정의'>멀티 모듈 시리즈 - (1) 멀티 모듈이란?</a>'에서 다음과 같이 정의했습니다. 
 
 > 기술에 의존하지 않은 자바 클래스(POJO)로 구성된 도메인 모델: **도메인 모델**
 
@@ -312,7 +312,7 @@ public class StudyContent {
 다음 그림은 이전에 보았던 프로젝트의 ERD 입니다.
 ![erd](https://raw.githubusercontent.com/donghyun0304/ImageRepo/master/uPic/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202025-02-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.15.05.png)
 
-'<a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란?#프로젝트-이해를-위한-erd'>멀티 모듈 시리즈 - (1) 멀티 모듈이란?</a>'에서 다음과 같은 요구사항이 존재했습니다.
+'<a target='_blank' href='/posts/single-to-multi-module-(1)#프로젝트-이해를-위한-erd'>멀티 모듈 시리즈 - (1) 멀티 모듈이란?</a>'에서 다음과 같은 요구사항이 존재했습니다.
 
 > 회원은 여러개의 스터디를 생성 할 수 있다.
 > - **Study 엔티티의 member_id** 는 스터디를 생성한 **스터디장**을 의미한다.
@@ -467,14 +467,14 @@ Martin Fowler는 BC에 대해서 다음과 같이 언급했습니다.
 ---
 ## **단일 모듈에서 멀티 모듈 전환기 목차**
 
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란?'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(2)-구현-계층'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(3)-도메인-모델'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</span></a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(4)-JPA-엔티티-격리-및-DB-추상화'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(5)-Bounded-Context-설계'>단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(6)-멀티-모듈-설계'>단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(7)-멀티-모듈-전환-with-Gradle'>단일 모듈에서 멀티 모듈 전환기 - (7) 멀티 모듈 전환 with Gradle</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(8)-회고-및-마무리'>단일 모듈에서 멀티 모듈 전환기 - (8) 회고 및 마무리</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(1)'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(2)'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(3)'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</span></a>
+- <a target='_blank' href='/posts/single-to-multi-module-(4)'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(5)'>단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(6)'>단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(7)'>단일 모듈에서 멀티 모듈 전환기 - (7) 멀티 모듈 전환 with Gradle</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(8)'>단일 모듈에서 멀티 모듈 전환기 - (8) 회고 및 마무리</a>
 
 ---
 ## **참고 문서**

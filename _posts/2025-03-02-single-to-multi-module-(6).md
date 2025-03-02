@@ -19,12 +19,12 @@ pin: false
 >**피드백은 언제나 환영합니다.** 글의 내용에 대한 의견이나 질문이 있으시면 댓글로 남겨주세요.
 {: .prompt-tip }
 
-<a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(5)-Bounded-Context-설계'>'단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계'</a>에서 이어집니다.
+<a target='_blank' href='/posts/single-to-multi-module-(5)'>'단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계'</a>에서 이어집니다.
 
 ---
 ## **설계한 Bounded Context(BC) 다시보기**
 
-<a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(5)-Bounded-Context-설계'>멀티 모듈 시리즈 - (5) Bounded Context 설계</a>에서 BC를 설계하고 BC 간의 의존 관계를 맺었습니다. 설계한 BC들을 가지고 멀티 모듈을 구성하게 됩니다.
+<a target='_blank' href='/posts/single-to-multi-module-(5)'>멀티 모듈 시리즈 - (5) Bounded Context 설계</a>에서 BC를 설계하고 BC 간의 의존 관계를 맺었습니다. 설계한 BC들을 가지고 멀티 모듈을 구성하게 됩니다.
 ![image-20250212185600950](https://raw.githubusercontent.com/dh0304/ImageRepo/master/uPic/image-20250212185600950.png)
 
 ---
@@ -261,14 +261,14 @@ public class StudyQueryRepositoryImpl implements StudyQueryRepository {
 ---
 ## **단일 모듈에서 멀티 모듈 전환기 목차**
 
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란?'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(2)-구현-계층'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(3)-도메인-모델'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(4)-JPA-엔티티-격리-및-DB-추상화'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(5)-Bounded-Context-설계'>단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(6)-멀티-모듈-설계'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계</span></a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(7)-멀티-모듈-전환-with-Gradle'>단일 모듈에서 멀티 모듈 전환기 - (7) 멀티 모듈 전환 with Gradle</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(8)-회고-및-마무리'>단일 모듈에서 멀티 모듈 전환기 - (8) 회고 및 마무리</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(1)'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(2)'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(3)'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(4)'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(5)'>단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(6)'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계</span></a>
+- <a target='_blank' href='/posts/single-to-multi-module-(7)'>단일 모듈에서 멀티 모듈 전환기 - (7) 멀티 모듈 전환 with Gradle</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(8)'>단일 모듈에서 멀티 모듈 전환기 - (8) 회고 및 마무리</a>
 
 ---
 ## 참고 문서

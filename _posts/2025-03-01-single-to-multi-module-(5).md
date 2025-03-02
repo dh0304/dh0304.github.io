@@ -19,7 +19,7 @@ pin: false
 >**피드백은 언제나 환영합니다.** 글의 내용에 대한 의견이나 질문이 있으시면 댓글로 남겨주세요.
 {: .prompt-tip }
 
-<a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(4)-JPA-엔티티-격리-및-DB-추상화'>'단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화'</a>에서 이어집니다.
+<a target='_blank' href='/posts/single-to-multi-module-(4)'>'단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화'</a>에서 이어집니다.
 
 ---
 ## **현재 구조 분석**
@@ -104,7 +104,7 @@ pin: false
 - 스터디와 관련된 도메인 모델은 `Stduy`, `StudyMember`, `Coordinator`가 있다.
 - `StudyMember`, `Coordinator` 는 `Study` 와 관련된 도메인 모델이므로 BC의 이름은 대표가 되는 도메인인 `Study` BC이다.
 
-> <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(3)-도메인-모델#동일-엔티티의-context별-도메인-모델-예시'>멀티 모듈 시리즈 - (3) 도메인 모델, 동일 엔티티의 Context별 도메인 모델 예시</a>에서 다뤘듯이 `Coordinator` 도메인 모델의 실제 JPA 엔티티는 `Member` JPA 엔티티이다.
+> <a target='_blank' href='/posts/single-to-multi-module-(3)#동일-엔티티의-context별-도메인-모델-예시'>멀티 모듈 시리즈 - (3) 도메인 모델, 동일 엔티티의 Context별 도메인 모델 예시</a>에서 다뤘듯이 `Coordinator` 도메인 모델의 실제 JPA 엔티티는 `Member` JPA 엔티티이다.
 {: .prompt-info }
 
 `QnA` BC
@@ -119,7 +119,7 @@ pin: false
 
 #### QnA BC 설계 시 고려했던 점
 
-다음 ERD은 이전에 보았던 <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란#프로젝트-이해를-위한-erd'>프로젝트 ERD</a>입니다.
+다음 ERD은 이전에 보았던 <a target='_blank' href='/posts/single-to-multi-module-(1)#프로젝트-이해를-위한-erd'>프로젝트 ERD</a>입니다.
 ![erd](https://raw.githubusercontent.com/donghyun0304/ImageRepo/master/uPic/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202025-02-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.15.05.png)
 
 `Study` 엔티티는 `Comment` 엔티티와 일대다 관계이다.
@@ -196,14 +196,14 @@ pin: false
 ---
 ## **단일 모듈에서 멀티 모듈 전환기 목차**
 
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란?'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(2)-구현-계층'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(3)-도메인-모델'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(4)-JPA-엔티티-격리-및-DB-추상화'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(5)-Bounded-Context-설계'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계</span></a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(6)-멀티-모듈-설계'>단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(7)-멀티-모듈-전환-with-Gradle'>단일 모듈에서 멀티 모듈 전환기 - (7) 멀티 모듈 전환 with Gradle</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(8)-회고-및-마무리'>단일 모듈에서 멀티 모듈 전환기 - (8) 회고 및 마무리</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(1)'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(2)'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(3)'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(4)'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(5)'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계</span></a>
+- <a target='_blank' href='/posts/single-to-multi-module-(6)'>단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(7)'>단일 모듈에서 멀티 모듈 전환기 - (7) 멀티 모듈 전환 with Gradle</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(8)'>단일 모듈에서 멀티 모듈 전환기 - (8) 회고 및 마무리</a>
 
 ---
 ## **참고 문서**

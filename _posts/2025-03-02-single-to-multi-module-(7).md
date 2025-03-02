@@ -19,7 +19,7 @@ pin: false
 >**피드백은 언제나 환영합니다.** 글의 내용에 대한 의견이나 질문이 있으시면 댓글로 남겨주세요.
 {: .prompt-tip }
 
-<a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(6)-멀티-모듈-설계'>'단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계'</a>에서 이어집니다.
+<a target='_blank' href='/posts/single-to-multi-module-(6)'>'단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계'</a>에서 이어집니다.
 
 ---
 ## **Gradle을 이용한 멀티 모듈 설계**
@@ -60,7 +60,7 @@ API 모듈이 Runtime 시점에 DataSource를 알아야합니다. 따라서 Runt
 ### 문제 발생
 - Domain 모듈이 도메인과 관련된 통합 테스트를 실제 DB를 사용할 경우, Domain 모듈은 DB 모듈을 알아야한다.
 
-<a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(6)-멀티-모듈-설계#domain-모듈의-역할과-책임'>멀티 모듈 시리즈 - (6) 멀티 모듈 설계, Domain 모듈의 역할과 책임</a>에서 다음과 같이 정의했습니다.
+<a target='_blank' href='/posts/single-to-multi-module-(6)#domain-모듈의-역할과-책임'>멀티 모듈 시리즈 - (6) 멀티 모듈 설계, Domain 모듈의 역할과 책임</a>에서 다음과 같이 정의했습니다.
 > 핵심 비즈니스를 가지는 Domain 모듈은 외부(클라이언트, 기술 등)에 의존적이지 않아야 한다.  
 
 프로덕션 레벨에서 Domain 모듈이 DB 모듈을 알지 못하게 하는 것은 당연합니다. 그런데 **테스트 레벨에서는 Domain 모듈이 DB 모듈을 알아도 괜찮을까요?**
@@ -126,14 +126,14 @@ DB 모듈에서 많은 Domain 모듈의 테스트 관련 의존성이 필요합�
 ---
 ## **단일 모듈에서 멀티 모듈 전환기 목차**
 
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(1)-멀티-모듈이란?'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(2)-구현-계층'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(3)-도메인-모델'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(4)-JPA-엔티티-격리-및-DB-추상화'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(5)-Bounded-Context-설계'>단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(6)-멀티-모듈-설계'>단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계</a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(7)-멀티-모듈-전환-with-Gradle'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (7) 멀티 모듈 전환 with Gradle</span></a>
-- <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(8)-회고-및-마무리'>단일 모듈에서 멀티 모듈 전환기 - (8) 회고 및 마무리</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(1)'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(2)'>단일 모듈에서 멀티 모듈 전환기 - (2) 구현 계층</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(3)'>단일 모듈에서 멀티 모듈 전환기 - (3) 도메인 모델</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(4)'>단일 모듈에서 멀티 모듈 전환기 - (4) JPA 엔티티 격리 및 DB 추상화</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(5)'>단일 모듈에서 멀티 모듈 전환기 - (5) Bounded Context 설계</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(6)'>단일 모듈에서 멀티 모듈 전환기 - (6) 멀티 모듈 설계</a>
+- <a target='_blank' href='/posts/single-to-multi-module-(7)'><span style='color: #ef5369'>단일 모듈에서 멀티 모듈 전환기 - (7) 멀티 모듈 전환 with Gradle</span></a>
+- <a target='_blank' href='/posts/single-to-multi-module-(8)'>단일 모듈에서 멀티 모듈 전환기 - (8) 회고 및 마무리</a>
 
 ---
 ## **참고 문서**
