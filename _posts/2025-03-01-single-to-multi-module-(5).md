@@ -45,7 +45,7 @@ pin: false
 - BC를 통해 도메인 간의 의존 관계를 관리하여 유지보수성을 높인다.
 - 의존 관계를 관리하여 순환 참조를 방지한다. 그럼에도 순환 참조는 발생할 수 있는데 의존 관계가 명확하여 빠르게 문제를 해결할 수 있다.
 
-> BC와 관련된 내용은 <a target='_blank' href='/posts/단일-모듈에서-멀티-모듈-전환기-(3)-도메인-모델#bounded-context란'>멀티 모듈 시리즈 - (3) 도메인 모델, Bounded Context란?</a>을 참고해 주세요.
+> BC와 관련된 내용은 <a target='_blank' href='/posts/single-to-multi-module-(3)#bounded-context란'>멀티 모듈 시리즈 - (3) 도메인 모델, Bounded Context란?</a>을 참고해 주세요.
 {: .prompt-info }
 
 ---
