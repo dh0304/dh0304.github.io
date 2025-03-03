@@ -122,6 +122,11 @@ DB 모듈을 분리하는 것은 기술에 의존하지 않게하는 것인데 �
 지금까지 긴 글을 읽어주셔서 감사합니다.
 
 ---
+## Github Repository 전체 코드
+
+<a target='_blank' href='https://github.com/dh0304/multi-module'>https://github.com/dh0304/multi-module</a>
+
+---
 ## **단일 모듈에서 멀티 모듈 전환기 목차**
 
 - <a target='_blank' href='/posts/single-to-multi-module-(1)'>단일 모듈에서 멀티 모듈 전환기 - (1) 멀티 모듈이란?</a>
